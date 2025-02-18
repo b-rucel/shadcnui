@@ -1,7 +1,7 @@
 # shadcn-starter
 
 
-#### vite + shadcn/ui + tailwindcss starter
+#### vite + shadcn/ui + tailwindcss 3 starter
 
 https://ui.shadcn.com/docs/installation/vite
 vite + shadcn
@@ -27,7 +27,6 @@ bun run dev
 ```
 
 at this point you'll have a working react project using vite
-
 
 shadcn documentation at this point will tell you to install tailwindcss but tailwindcss version has changed to 4
 so following instructions will install version 4, we will be using version 3
@@ -66,8 +65,5 @@ go through another wizard
 ✔ Created 1 file:
   - src/lib/utils.ts
 
-bunx --bun shadcn@latest add button
-
-
-
+bunx --bun shadcn@latest add button card badge
 ```

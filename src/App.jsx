@@ -17,12 +17,16 @@ function App() {
             Start your next project with the power of Vite, React, Tailwind CSS, and shadcn/ui
           </p>
           <div className="flex gap-4 justify-center">
-            <Button size="lg">
-              Get Started
-              <ArrowRight className="ml-2 h-4 w-4" />
+            <Button size="lg" asChild>
+              <a href="https://ui.shadcn.com/docs/installation/vite" target="_blank">
+                Get Started
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
             </Button>
-            <Button size="lg" variant="outline">
-              Documentation
+            <Button size="lg" variant="outline" asChild>
+              <a href="https://github.com/b-rucel/shadcnui">
+                Documentation
+              </a>
             </Button>
           </div>
         </div>
@@ -65,17 +69,15 @@ function App() {
           <CardHeader>
             <CardTitle>Ready to Use</CardTitle>
             <CardDescription>
-              Start building your app with pre-configured components
+              Use this repo as a starting point
             </CardDescription>
           </CardHeader>
-          <CardContent className="bg-muted p-4 rounded-md font-mono text-sm">
+          <CardContent className="bg-muted px-6 py-4 rounded-md font-mono text-sm">
             <pre>
-              npm create vite@latest my-app -- --template react
-              cd my-app
-              npx shadcn-ui@latest init
+              npx degit https://github.com/b-rucel/shadcnui new-project
             </pre>
           </CardContent>
-          <CardFooter className="text-muted-foreground text-sm">
+          <CardFooter className="text-muted-foreground text-sm mt-4">
             Simple installation process, extensive component library included
           </CardFooter>
         </Card>

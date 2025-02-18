@@ -18,7 +18,7 @@ function App() {
           </p>
           <div className="flex gap-4 justify-center">
             <Button size="lg" asChild>
-              <a href="https://ui.shadcn.com/docs/installation/vite" target="_blank">
+              <a href="https://ui.shadcn.com/docs" target="_blank">
                 Get Started
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
@@ -74,7 +74,11 @@ function App() {
           </CardHeader>
           <CardContent className="bg-muted px-6 py-4 rounded-md font-mono text-sm">
             <pre>
-              npx degit https://github.com/b-rucel/shadcnui new-project
+              npx degit https://github.com/b-rucel/shadcnui new-project<br /><br />
+
+              cd new-project<br />
+              npm install<br />
+              npm run dev
             </pre>
           </CardContent>
           <CardFooter className="text-muted-foreground text-sm mt-4">
